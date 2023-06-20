@@ -121,13 +121,9 @@
         </div>
       </section>
 
-
-
-
       <!-- ------------------------Charts content section shubham------------------------ -->
       <section class="charts">
         <div class="row">
-
           <div id="curve_chart" class="charts-col"></div>
 
           <div class="piechart-col">
@@ -159,7 +155,6 @@
           </div>
         </div>
       </section>
-
 
       <!-- ------------------------Footer Section Rohan------------------------ -->
       <footer class="footer-distributed">
@@ -265,7 +260,7 @@
           ]);
 
           var options = {
-            title: "My Daily Activities",
+            title: "PDC Export Import PVT LTD",
           };
 
           var chart = new google.visualization.PieChart(
@@ -276,40 +271,38 @@
         }
       </script>
 
-
-
-
       <!-- ------------------------js for Charts content Section shubham------------------------ -->
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+      <script
+        type="text/javascript"
+        src="https://www.gstatic.com/charts/loader.js"
+      ></script>
+      <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2004',  1000,      400],
-          ['2005',  1170,      460],
-          ['2006',  660,       1120],
-          ['2007',  1030,      540]
-        ]);
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ["Year", "Sales", "Expenses"],
+            ["2004", 1000, 400],
+            ["2005", 1170, 460],
+            ["2006", 660, 1120],
+            ["2007", 1030, 540],
+          ]);
 
-        var options = {
-          title: 'Company Performance',
-          curveType: 'function',
-          legend: { position: 'bottom' }
-        };
+          var options = {
+            title: "Company Performance",
+            curveType: "function",
+            legend: { position: "bottom" },
+          };
 
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+          var chart = new google.visualization.LineChart(
+            document.getElementById("curve_chart")
+          );
 
-        chart.draw(data, options);
-      }
-    </script>
-
-
-
-
+          chart.draw(data, options);
+        }
+      </script>
     </body>
   </body>
 </html>
