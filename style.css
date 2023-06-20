@@ -1033,31 +1033,28 @@ footer {
 
 /* Gallary  ---Parag---*/
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-
-::selection{
+::selection {
   color: #fff;
   background: #f44336;
 }
 
-.wrapper{
+.wrapper {
   margin: 100px auto;
   max-width: 1100px;
 }
-.wrapper nav{
+.wrapper nav {
   display: flex;
   justify-content: left;
 }
-.wrapper .items{
+.wrapper .items {
   display: flex;
   max-width: 720px;
   width: 100%;
   justify-content: space-between;
 }
-.items{
+.items {
   margin: 10px;
 }
 .items span {
@@ -1086,51 +1083,51 @@ footer {
   transition: all 0.3s ease;
 } */
 .items span.active,
-.items span:hover{
+.items span:hover {
   color: #fff;
   background: #f44336;
 }
 
-.gallery{
+.gallery {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
   justify-content: space-evenly;
 }
-.gallery .image{
+.gallery .image {
   width: calc(40%);
   padding: 7px;
   margin-bottom: 20px;
 }
-.gallery .image span{
+.gallery .image span {
   display: flex;
   width: 100%;
   overflow: hidden;
 }
-.gallery .image img{
+.gallery .image img {
   width: 100%;
   vertical-align: middle;
   transition: all 0.3s ease;
 }
-.gallery .image:hover img{
+.gallery .image:hover img {
   transform: scale(1.1);
 }
-.gallery .image.hide{
+.gallery .image.hide {
   display: none;
 }
-.gallery .image.show{
+.gallery .image.show {
   animation: animate 0.4s ease;
 }
 @keyframes animate {
-  0%{
+  0% {
     transform: scale(0.5);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
 }
 
-.preview-box{
+.preview-box {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1143,43 +1140,43 @@ footer {
   pointer-events: none;
   border-radius: 3px;
   padding: 0 5px 5px 5px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
-.preview-box.show{
+.preview-box.show {
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
   transition: all 0.3s ease;
 }
-.preview-box .details{
+.preview-box .details {
   padding: 13px 15px 13px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.details .title{
+.details .title {
   display: flex;
   font-size: 18px;
   font-weight: 400;
 }
-.details .title p{
+.details .title p {
   font-weight: 500;
   margin-left: 5px;
 }
-.details .icon{
+.details .icon {
   color: #007bff;
   font-style: 22px;
   cursor: pointer;
 }
-.preview-box .image-box{
+.preview-box .image-box {
   width: 100%;
   display: flex;
 }
-.image-box img{
+.image-box img {
   width: 100%;
   border-radius: 0 0 3px 3px;
 }
-.shadow{
+.shadow {
   position: fixed;
   left: 0;
   top: 0;
@@ -1187,9 +1184,9 @@ footer {
   width: 100%;
   z-index: 2;
   display: none;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
-.shadow.show{
+.shadow.show {
   display: block;
 }
 
@@ -1198,12 +1195,10 @@ footer {
   .items {
     display: flex;
     flex-wrap: wrap;
- 
   }
-  
+
   .item {
     width: 50%;
-  
   }
 }
 .item {
@@ -1211,40 +1206,94 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
   align-items: center;
-
 }
 @media (max-width: 1000px) {
-  .gallery .image{
+  .gallery .image {
     width: calc(100% / 3);
   }
 }
 @media (max-width: 800px) {
-  .gallery .image{
+  .gallery .image {
     width: calc(100% / 2);
   }
 }
 @media (max-width: 700px) {
-  .wrapper nav .items{
+  .wrapper nav .items {
     max-width: 600px;
-   
   }
-  nav .items span{
+  nav .items span {
     padding: 7px 15px;
   }
 }
 @media (max-width: 600px) {
-  .wrapper{
+  .wrapper {
     margin: 30px auto;
   }
-  .wrapper nav .items{
+  .wrapper nav .items {
     flex-wrap: wrap;
     justify-content: center;
   }
-  nav .items span{
+  nav .items span {
     margin: 5px;
   }
-  .gallery .image{
+  .gallery .image {
     width: 100%;
+  }
+}
+
+/* ------------------------Charts content Section Rohan------------------------ */
+.charts {
+  width: 80%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  align-items: center;
+}
+.charts-col {
+  margin-right: 0px;
+}
+.piechart-col {
+  flex-basis: 100%;
+  padding: 30px 2px;
+}
+
+.piechart-col h1 {
+  padding-top: 0;
+}
+
+.piechart-col p {
+  padding: 15px 0 25px;
+  text-align: justify;
+}
+
+.piechart-col button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #f44336;
+  background: transparent;
+  color: #000;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 700px) {
+  .piechart-col h1 {
+    padding-top: 0;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  .charts-col {
+    width: 100%;
+    height: 150%;
+    flex-direction: column;
+    /* margin-left: -100px; */
+    align-items: center;
   }
 }
 

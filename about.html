@@ -46,7 +46,7 @@
       <section class="about-us">
         <div class="row">
           <div class="about-col">
-            <h1>We are P.D.C EXPORT INPORT PVT LTD</h1>
+            <h1>We are PDC EXPORT IMPORT PVT LTD</h1>
             <p>
               We are an established and dynamic export-import company dedicated
               to facilitating global trade and enabling businesses to thrive in
@@ -86,6 +86,80 @@
           </div>
         </div>
       </section>
+
+      <!-- ------------------------Charts content section Rohan------------------------ -->
+      <section class="charts">
+        <div class="row">
+          <div id="piechart" class="charts-col"></div>
+          <div class="piechart-col">
+            <h1>PDC EXPORT IMPORT PVT LTD role in International trade</h1>
+            <p>
+              We are an established and dynamic export-import company dedicated
+              to facilitating global trade and enabling businesses to thrive in
+              international markets. As the proud owner of our company, we are
+              driven by a passion for connecting manufacturers, suppliers, and
+              buyers worldwide. We specialize in providing comprehensive
+              services to cater to the diverse needs of our clients. For
+              exporters, we offer extensive market research and handle the
+              entire export process, while for importers, we conduct thorough
+              supplier research and negotiate favorable terms.
+              <br />
+              As the owner of our company, I personally oversee all operations,
+              ensuring that we uphold the highest standards of professionalism
+              and customer satisfaction. With our expertise, dedication, and
+              unwavering commitment to success.
+            </p>
+            <div>
+              <button
+                type="button"
+                onclick="location.href ='https://github.com/rohan-anil-patil'"
+              >
+                <span></span>Connect Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- ------------------------Charts content section shubham------------------------ -->
+      <section class="charts">
+        <div class="row">
+
+          <div id="curve_chart" class="charts-col"></div>
+
+          <div class="piechart-col">
+            <h1>PDC EXPORT IMPORT PVT LTD role in International trade</h1>
+            <p>
+              We are an established and dynamic export-import company dedicated
+              to facilitating global trade and enabling businesses to thrive in
+              international markets. As the proud owner of our company, we are
+              driven by a passion for connecting manufacturers, suppliers, and
+              buyers worldwide. We specialize in providing comprehensive
+              services to cater to the diverse needs of our clients. For
+              exporters, we offer extensive market research and handle the
+              entire export process, while for importers, we conduct thorough
+              supplier research and negotiate favorable terms.
+              <br />
+              As the owner of our company, I personally oversee all operations,
+              ensuring that we uphold the highest standards of professionalism
+              and customer satisfaction. With our expertise, dedication, and
+              unwavering commitment to success.
+            </p>
+            <div>
+              <button
+                type="button"
+                onclick="location.href ='https://github.com/rohan-anil-patil'"
+              >
+                <span></span>Connect Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <!-- ------------------------Footer Section Rohan------------------------ -->
       <footer class="footer-distributed">
@@ -171,6 +245,71 @@
           loader.style.display = "none";
         });
       </script>
+      <!-- ------------------------js for Charts content Section Rohan------------------------ -->
+      <script
+        type="text/javascript"
+        src="https://www.gstatic.com/charts/loader.js"
+      ></script>
+      <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ["Task", "Hours per Day"],
+            ["Food", 11],
+            ["Electronics", 2],
+            ["Constructions", 2],
+            ["Jewellery", 2],
+            ["Others", 7],
+          ]);
+
+          var options = {
+            title: "My Daily Activities",
+          };
+
+          var chart = new google.visualization.PieChart(
+            document.getElementById("piechart")
+          );
+
+          chart.draw(data, options);
+        }
+      </script>
+
+
+
+
+      <!-- ------------------------js for Charts content Section shubham------------------------ -->
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2004',  1000,      400],
+          ['2005',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+
+
     </body>
   </body>
 </html>
