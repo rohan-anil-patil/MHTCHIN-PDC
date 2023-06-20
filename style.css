@@ -1296,4 +1296,50 @@ footer {
     align-items: center;
   }
 }
+/* ---------------------------------------------------services section by shubham ------------------------------------------------ */
 
+.pdc-imagess {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  /* border: 2px solid red; */
+}
+.pdc-imagess img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  margin: 1.5rem;
+  height: 55vh;
+}
+.pdc-image1 {
+  /* width: 250px; */
+  margin: 0 10px;
+  /* box-shadow: 0 0 20px 2px rgba(0,0,0, .1); */
+  align-items: center;
+  text-align: center;
+  transition: 1s;
+}
+.pdc-image1:hover {
+  transform: scale(1.1);
+  z-index: 3;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  /* color: black; */
+  font-weight: bold;
+  /* height: 90vh; */
+}
+
+@media (min-width: 390px) and (max-width: 500px) {
+  .pdc-image1 {
+    width: 40vw;
+    /* margin:; */
+    /* height: 30vh; */
+  }
+  .pdc-imagess img {
+    height: 30vh;
+  }
+}
