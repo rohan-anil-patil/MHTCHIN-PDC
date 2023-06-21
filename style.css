@@ -1323,8 +1323,8 @@ footer {
   transition: 1s;
 }
 .pdc-image1:hover {
-  transform: scale(1.1);
-  z-index: 3;
+  transform: 3s;
+  z-index: -1;
 }
 
 .carousel-control-prev,
