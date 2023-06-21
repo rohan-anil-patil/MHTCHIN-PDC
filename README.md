@@ -1,6 +1,6 @@
 # MHTCHIN-PDC
 Project: MHTECHIN P.D.C EXPORT IMPORT PVT LTD  Html, CSS, JavaScript, SQL PHP jquery
-All Rights Reserved © 2023 MHTECHIN PVT LTD
+All Rights Reserved © 2023 MHTECHIN PVT LTD.
 
 IMPORTANT: This code is the exclusive property of MHTECHIN PVT LTD. It is protected by copyright 
 laws and international treaties. Unauthorized reproduction, distribution, or use of this code, in whole 
